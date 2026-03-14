@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Minhas Notas</title>
+</head>
+
+<body>
+
+<h1>Minhas Notas</h1>
+
+<textarea id="nota"></textarea>
+<br><br>
+<button onclick="salvar()">Salvar</button>
+
+<ul id="lista"></ul>
+
+<script>
+function salvar(){
+let texto=document.getElementById("nota").value
+let li=document.createElement("li")
+li.textContent=texto
+document.getElementById("lista").appendChild(li)
+}
+</script>
+
+</body>
+</html>
+
